@@ -3,8 +3,8 @@ import GalleryItem from '../../components/galleryItem/GalleryItem';
 import './gallery.css';
 
 const Gallery = (props) => {
-    const renderItem = props.data.map((item) => {
-        return <GalleryItem item={item} />
+    const renderItem = props.data.map((item, ind) => {
+        return <GalleryItem item={item} key={ind}/>
     })
     return (
         <section id="gallery">

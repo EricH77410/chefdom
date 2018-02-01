@@ -2,8 +2,8 @@ import React from 'react';
 import Slide from '../../components/slide/Slide';
 
 const FullScreenSlider = (props) => {
-    const renderSlide = props.data.map((item) => {
-        return <Slide img={item.img} description={item.description} info={item.info} />
+    const renderSlide = props.data.map((item, ind) => {
+        return <Slide img={item.img} description={item.description} info={item.info} key={ind}/>
     })
     return (
         <div className="tp-banner-container">

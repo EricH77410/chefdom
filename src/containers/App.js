@@ -5,6 +5,7 @@ import Header from '../components/layout/header/Header';
 import Footer from '../components/layout/footer/Footer';
 import FullScreenSlider from './fullScreenSlider/FullScreenSlider';
 import Gallery from './gallery/Gallery';
+import Menu from './menu/Menu';
 
 class App extends Component {
   state = {
@@ -41,6 +42,23 @@ class App extends Component {
         img: 'img/thumb8.png',
         text: 'Lorem ipsum dolores harry potter'
       }
+    ],
+    menu: [
+      {
+        titre: 'Standard',
+        prix: 20,
+        contenu: ''
+      },
+      {
+        titre: 'Prestige',
+        prix: 28,
+        contenu: ''
+      },
+      {
+        titre: 'Excellence',
+        prix: 35,
+        contenu: ''
+      }
     ]
   }
   render() {
@@ -49,6 +67,7 @@ class App extends Component {
         <Header />
           <FullScreenSlider data={this.state.data} />
           <Gallery data={this.state.gallery} />
+          <Menu data={this.state.menu}/>
         <Footer />
       </div>
     );
