@@ -8,8 +8,8 @@ const MenuItem = (props) => {
                     <i className="pe-5x pe-7s-wristwatch"></i> 
                 </div>
                 <div className="table-header">
-                    <h3>Early Bird</h3>
-                    <p className="price">$150</p>
+                    <h3>{props.menu.titre}</h3>
+                    <p className="price">{props.menu.prix} €</p>
                 </div>
                 <ul className="desc list-unstyled">
                     <li>Conference Kit</li>
