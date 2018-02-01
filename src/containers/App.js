@@ -28,6 +28,18 @@ class App extends Component {
       {
         img: 'img/thumb7.png',
         text: 'Lorem ipsum dolores harry potter'
+      },
+      {
+        img: 'img/thumb6.png',
+        text: 'Lorem ipsum dolores harry potter'
+      },
+      {
+        img: 'img/thumb5.png',
+        text: 'Lorem ipsum dolores harry potter'
+      },
+      {
+        img: 'img/thumb8.png',
+        text: 'Lorem ipsum dolores harry potter'
       }
     ]
   }
@@ -35,7 +47,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-          <FullScreenSlider data={this.state.data}/>
+          <FullScreenSlider data={this.state.data} />
           <Gallery data={this.state.gallery} />
         <Footer />
       </div>

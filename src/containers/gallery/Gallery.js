@@ -1,5 +1,6 @@
 import React from 'react';
 import GalleryItem from '../../components/galleryItem/GalleryItem';
+import './gallery.css';
 
 const Gallery = (props) => {
     const renderItem = props.data.map((item) => {
@@ -7,17 +8,14 @@ const Gallery = (props) => {
     })
     return (
         <section id="gallery">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-12">
-                        <div id="timeline" data-columns>
-                            {renderItem}
-                        </div>
-                    </div>                    
-                </div>
+            <div className="gallery__title">
+                <h3 className="uppercase">Quelques une de nos réalisations</h3>
+            </div>   
+                   
+            <div className="container gallery-container">               
+                {renderItem}               
             </div>
-        </section>
-        
+        </section>        
     )
 }
 
