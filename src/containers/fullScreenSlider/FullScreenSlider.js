@@ -1,5 +1,5 @@
 import React from 'react';
-import Slide from './slide/Slide';
+import Slide from '../../components/slide/Slide';
 
 const FullScreenSlider = (props) => {
     const renderSlide = props.data.map((item) => {
